@@ -34,9 +34,17 @@ public class Ia {
             "Venus es el segundo planeta del sistema solar y es conocido como el planeta hermano de la Tierra.",
             "La Tierra es nuestro planeta, el tercero del sistema solar y el único conocido que alberga vida.",
             "Marte es el cuarto planeta del sistema solar y es conocido como el planeta rojo debido a su color característico.",
-            "Hi",
-            "Heyy",
-            "Hellouuu"
+            "Júpiter: Gigante gaseoso, mayor planeta del sistema solar",
+            "Saturno: Anillos espectaculares, gaseoso, conocido por su belleza",
+            "Urano: Planeta inclinado, color azul verdoso, congelado",
+            "Neptuno: Azul intenso, último gigante gaseoso del sistema solar",
+            "Ceres: Planeta enano, mayor objeto en el cinturón de asteroides",
+            "Eris: Planeta enano, más masivo que Plutón, lejano",
+            "Makemake: Planeta enano, superficie helada, en el cinturón de Kuiper",
+            "Haumea: Planeta enano, forma alargada, gira rápidamente",
+            "Hi, ¿Como te puedo ayudar?",
+            "Heyy, ¿Como te puedo ayudar?",
+            "Hellouuu, ¿Como te puedo ayudar?"
 
             // Agrega más datos de los planetas según sea necesario
         };
