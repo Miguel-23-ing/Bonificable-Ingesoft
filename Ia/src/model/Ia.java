@@ -64,4 +64,22 @@ public class Ia {
         return "Lo siento, no tengo información sobre ese planeta.";
     }
 
+    public void input(String text) {
+        String[] textArray = text.split(" ");
+        
+        for(int i = 0; i < textArray.length; i++){
+            for(int j = 0; j < keyWord.length; j++){
+                if(textArray[i].equalsIgnoreCase(keyWord[j])){
+                    try{
+                       
+                        printPlanetInfo(keyWord[j]);
+                    
+                    }catch(Exception e){
+                        System.out.println(e);
+                    }
+                
+                }
+            }   
+        }
+    }
 }

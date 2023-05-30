@@ -22,7 +22,7 @@ public class Main {
                 break;
             }
 
-            prototype.printPlanetInfo(input);
+            prototype.input(input);
         }
 
         scanner.close();
