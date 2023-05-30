@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) throws InterruptedException {
         Ia prototype = new Ia();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("¡Bienvenido al prototipo de preguntas y respuestas sobre planetas!");
-        System.out.println("Puedes hacer preguntas sobre los planetas del sistema solar. Escribe 'salir' para terminar.");
+        System.out.println("\n¡Bienvenido al prototipo de preguntas y respuestas sobre planetas!");
+        System.out.println("\n!!Puedes hacer preguntas sobre los planetas del sistema solar.!!" + "\nescribe 'salir' para terminar...");
 
         String input;
         while (true) {
@@ -26,4 +27,5 @@ public class Main {
 
         scanner.close();
     }
+
 }
