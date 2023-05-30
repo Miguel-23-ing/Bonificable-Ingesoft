@@ -59,7 +59,12 @@ public class Ia {
                 Thread.sleep(50); // Añade un pequeño retraso de 50 milisegundos entre cada letra impresa
             }
         } else {
-            System.out.println(planetInfo);
+            String err = "Lo siento, no tengo información sobre ese planeta.";
+            for(int i = 0; i < err.length(); i++){
+                System.out.print(err.charAt(i));
+                Thread.sleep(50);
+            }
+            
         }
     }
 
@@ -90,7 +95,13 @@ public class Ia {
             }
             
             if(i == textArray.length - 1){
-                System.out.println("Lo siento, no tengo información sobre ese planeta.");
+                try{
+                       
+                    printPlanetInfo("Lo siento, no tengo información sobre ese planeta.");
+                
+                }catch(Exception e){
+                    System.out.println(e);
+                }
             }
         }
     }

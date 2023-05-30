@@ -18,7 +18,7 @@ public class Main {
             input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("salir")) {
-                System.out.println("¡Hasta luego!");
+                System.out.print("¡Hasta luego!");
                 break;
             }
 
