@@ -79,12 +79,12 @@ public class Ia {
 
     public void input(String text) {
         String[] textArray = text.split(" ");
-        
+        boolean start = true;
         for(int i = 0; i < textArray.length; i++){
             for(int j = 0; j < keyWord.length; j++){
                 if(textArray[i].equalsIgnoreCase(keyWord[j])){
                     try{
-                       
+                       start = false;
                         printPlanetInfo(keyWord[j]);
                     
                     }catch(Exception e){
@@ -94,7 +94,7 @@ public class Ia {
                 }
             }
             
-            if(i == textArray.length - 1){
+            if(start){
                 try{
                        
                     printPlanetInfo("Sorry, I have no information about that planet.");
