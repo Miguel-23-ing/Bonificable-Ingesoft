@@ -79,7 +79,11 @@ public class Ia {
                     }
                 
                 }
-            }   
+            }
+            
+            if(i == textArray.length - 1){
+                System.out.println("Lo siento, no tengo información sobre ese planeta.");
+            }
         }
     }
 }
