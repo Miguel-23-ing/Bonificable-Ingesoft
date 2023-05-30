@@ -9,16 +9,16 @@ public class Main {
         Ia prototype = new Ia();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\n¡Bienvenido al prototipo de preguntas y respuestas sobre planetas!");
-        System.out.println("\n!!Puedes hacer preguntas sobre los planetas del sistema solar.!!" + "\nescribe 'salir' para terminar...");
+        System.out.println("\n¡Welcome to the prototype of questions and answers about planets.!");
+        System.out.println("\n!!You can ask questions about the planets of the solar system.!!" + "\netype 'exit' to finish...");
 
         String input;
         while (true) {
-            System.out.print("\nIngresa tu pregunta: ");
+            System.out.print("\nEnter your question:: ");
             input = scanner.nextLine();
 
-            if (input.equalsIgnoreCase("salir")) {
-                System.out.print("¡Hasta luego!");
+            if (input.equalsIgnoreCase("Exit")) {
+                System.out.print("¡See you later!");
                 break;
             }
 

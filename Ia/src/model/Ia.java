@@ -30,21 +30,21 @@ public class Ia {
 
         // Inicializa los datos de los planetas
         answers = new String[] {
-            "Mercurio es el planeta más cercano al Sol.",
-            "Venus es el segundo planeta del sistema solar y es conocido como el planeta hermano de la Tierra.",
-            "La Tierra es nuestro planeta, el tercero del sistema solar y el único conocido que alberga vida.",
-            "Marte es el cuarto planeta del sistema solar y es conocido como el planeta rojo debido a su color característico.",
-            "Júpiter: Gigante gaseoso, mayor planeta del sistema solar",
-            "Saturno: Anillos espectaculares, gaseoso, conocido por su belleza",
-            "Urano: Planeta inclinado, color azul verdoso, congelado",
-            "Neptuno: Azul intenso, último gigante gaseoso del sistema solar",
-            "Ceres: Planeta enano, mayor objeto en el cinturón de asteroides",
-            "Eris: Planeta enano, más masivo que Plutón, lejano",
-            "Makemake: Planeta enano, superficie helada, en el cinturón de Kuiper",
-            "Haumea: Planeta enano, forma alargada, gira rápidamente",
-            "Hi, ¿Como te puedo ayudar?",
-            "Heyy, ¿Como te puedo ayudar?",
-            "Hellouuu, ¿Como te puedo ayudar?"
+            "Mercury is the closest planet to the Sun.",
+            "Venus is the second planet in the solar system and is known as Earth's sister planet.",
+            "Earth is our planet, the third planet in the solar system and the only one known to harbor life.",
+            "Mars is the fourth planet in the solar system and is known as the red planet because of its characteristic color.",
+            "Jupiter: gas giant, largest planet in the solar system",
+            "Saturn: Spectacular rings, gaseous, known for its beauty.",
+            "Uranus: Tilted planet, greenish blue, frozen.",
+            "Neptune: Intense blue, last gas giant in the solar system",
+            "Ceres: Dwarf planet, largest object in asteroid belt",
+            "Eris: Dwarf planet, more massive than Pluto, far away.",
+            "Makemake: Dwarf planet, icy surface, in the Kuiper belt.",
+            "Haumea: Dwarf planet, elongated shape, rotates rapidly",
+            "Hi, how can I help you?",
+            "Heyy, how can I help you?",
+            "Hellouuu, how can I help you?"
 
             // Agrega más datos de los planetas según sea necesario
         };
@@ -53,13 +53,13 @@ public class Ia {
     public void printPlanetInfo(String planet) throws InterruptedException {
         String planetInfo = getPlanetInfo(planet);
 
-        if (!planetInfo.equals("Lo siento, no tengo información sobre ese planeta.")) {
+        if (!planetInfo.equals("Sorry, I have no information about that planet.")) {
             for (int i = 0; i < planetInfo.length(); i++) {
                 System.out.print(planetInfo.charAt(i));
                 Thread.sleep(50); // Añade un pequeño retraso de 50 milisegundos entre cada letra impresa
             }
         } else {
-            String err = "Lo siento, no tengo información sobre ese planeta.";
+            String err = "Sorry, I have no information about that planet.";
             for(int i = 0; i < err.length(); i++){
                 System.out.print(err.charAt(i));
                 Thread.sleep(50);
@@ -74,7 +74,7 @@ public class Ia {
                 return answers[i];
             }
         }
-        return "Lo siento, no tengo información sobre ese planeta.";
+        return "Sorry, I have no information about that planet.";
     }
 
     public void input(String text) {
@@ -97,7 +97,7 @@ public class Ia {
             if(i == textArray.length - 1){
                 try{
                        
-                    printPlanetInfo("Lo siento, no tengo información sobre ese planeta.");
+                    printPlanetInfo("Sorry, I have no information about that planet.");
                 
                 }catch(Exception e){
                     System.out.println(e);
